@@ -1,0 +1,1 @@
+class MoviePod::CLI
