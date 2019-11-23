@@ -1,2 +1,2 @@
-class MoviePod::Movie 
+class Moviepod::Movie 
 end
