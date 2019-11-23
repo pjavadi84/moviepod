@@ -4,3 +4,4 @@ require_relative "moviepod/movie"
 require_relative "moviepod/api"
 
 require "pry"
+require "httparty"
