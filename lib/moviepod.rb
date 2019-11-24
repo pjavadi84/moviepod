@@ -1,5 +1,4 @@
 require "pry"
-require "json"
 require "httparty"
 
 require_relative "moviepod/version"
