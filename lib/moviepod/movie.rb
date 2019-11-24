@@ -1,2 +1,3 @@
 class MoviePod::Movie 
+  
 end
