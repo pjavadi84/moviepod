@@ -1,5 +1,6 @@
 require "pry"
-require "httparty"
+require "json"
+require 'rest-client'
 
 require_relative "moviepod/version"
 require_relative "moviepod/cli"
