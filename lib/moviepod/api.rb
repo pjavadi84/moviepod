@@ -8,7 +8,7 @@ class MoviePod::API
     json = JSON.parse(results)["results"]
     
     json.each do |trend_hash|
-      MoviePod::Movie.new[trend_hash]
+      MoviePod::Movie.new(trend_hash)
       
       binding.pry
     end
