@@ -3,4 +3,4 @@
  require_relative "../lib/moviepod.rb"
 
  MoviePod::CLI.new.welcome
- MoviePod::CLI.new.movie_information
+ MoviePod::CLI.new.menu

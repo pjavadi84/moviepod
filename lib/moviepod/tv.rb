@@ -1,6 +1,6 @@
-class MoviePod::Movie 
+class MoviePod::TV 
   
-  attr_accessor :id, :title, :vote_average, :overview, :budget, :popularity, :release_date
+  attr_accessor :id, :name, :vote_average, :overview, :popularity
  
   
   @@all = []
