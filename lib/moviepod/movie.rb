@@ -15,4 +15,8 @@ class MoviePod::Movie
     @@all
   end
   
+  def self.exit
+    exit
+  end
+  
 end
