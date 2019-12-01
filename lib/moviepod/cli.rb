@@ -10,7 +10,7 @@ class MoviePod::CLI
   
   def trendy_movie_list
     puts "top movies trending today"
-    @movies = MoviePod::Movie_List.today
+    @movies = MoviePod::Movie.today
     @movies.each.with_index(1) do |movie, index|
       puts "#{index}. #{movie.title} - Rating: #{movie.popularity}"
     end
@@ -18,7 +18,7 @@ class MoviePod::CLI
   
   def trendy_tv_show_list
     puts "top TV shows trending today"
-    @TV_Shows = MoviePod::TV_Show_List.today
+    @TV_Shows = MoviePod::TV.today
     @TV_Shows.each.with_index(1) do |tv_show, index|
       puts "#{index}. #{tv_show.name} - Rating: #{tv_show.popularity}"
     end
