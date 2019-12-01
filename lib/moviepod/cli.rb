@@ -3,6 +3,8 @@ class MoviePod::CLI
   def call 
     trendy_movie_list
     trendy_tv_show_list
+    tv_list_menu
+    movie_list_menu
     goodbye
   end
   
@@ -22,18 +24,56 @@ class MoviePod::CLI
     end
   end
   
-  def menu
+  
+  def tv_list_menu
     user_input = nil 
     while user_input != "exit"
-      puts "Enter the number of a movie you are interested to see more detail of: "
-      user_input = gets.strip.downcase
+      puts "Enter a number to see details of that TV show OR 'list' to see the list again, or type 'exit' to exit the program:  "
       
+      user_input = gets.strip.downcase
+  
+      if user_input.to_i > 0 
+        the_tv_show = @TV_shows[user_input.to_i - 1]
+        puts "#{the_tv_show.name} - #{the_tv_show.popularity}"
+      elsif user_input == "list"
+        trendy_tv_show_list
+       else
+        puts "invalid input. Please type list or exit."
+       end
+       
+    end
+  end
+  
+    def movie_list_menu
+    user_input = nil 
+    while user_input != "exit"
+      puts "Enter a number to see details of that movie OR 'list' to see the list again, or type 'exit' to exit the program:  "
+      
+      user_input = gets.strip.downcase
+  
       if user_input.to_i > 0 
         the_movie = @movies[user_input.to_i - 1]
-        puts "#{the_movie.title} - #{the_movie.popularity}"
+        puts "#{the_movie.name} - #{the_movie.popularity}"
       elsif user_input == "list"
         trendy_movie_list
-      else
+       else
+        puts "invalid input. Please type list or exit."
+       end
+       
+    end
+  end
+  
+  
+  
+  def goodbye
+    puts "Thank you for visiting Moviepod!Comeback again next time you like to get a fast convenient way of checking the daily trends"
+  end
+  
+  
+end
+    
+    
+    
         
     
   
