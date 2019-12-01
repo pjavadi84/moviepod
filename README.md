@@ -1,8 +1,3 @@
-"what's up?"
-"This is very cool app"
-"third modification"
-"forth modification"
-"5th"
 
 # Moviepod
 
