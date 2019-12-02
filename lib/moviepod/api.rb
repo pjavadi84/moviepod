@@ -4,6 +4,7 @@ class MoviePod::API
   
       def self.movies
         results = RestClient.get("#{BASE_URL}/movie/popular?page=1&language=en-US&api_key=#{KEY}")
+
         json = JSON.parse(results)
         json["results"].each do |trend_hash|
           MoviePod::Movie.new(trend_hash)

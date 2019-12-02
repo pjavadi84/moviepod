@@ -1,10 +1,22 @@
 class MoviePod::CLI
   
   def call 
-    trendy_movie_list
+    greeting
     movie_list_menu
-    goodbye
   end
+  
+  def greeting
+    puts "welcome to Moviepod. type menu to check the list or exit to quit the app:"
+    user_input = gets.strip.downcase
+    if user_input == "menu"
+      trendy_movie_list
+    elsif user_input == "exit"
+      goodbye
+    else
+      puts "'#{user_input}' is not a valid input. please type 'menu' or 'exit"
+    end
+  end
+  
   
   def trendy_movie_list
     puts "TODAY's TOP TRENDING MOVIES:"
@@ -29,8 +41,10 @@ class MoviePod::CLI
         puts "Popularity: #{the_movie["popularity"]}"
       elsif user_input == "list"
         trendy_movie_list
-      else
+      elsif user_input == "exit"
         goodbye
+      elsif user_input.to_i > 20
+        puts "invalid input! please type a number for that movie"
       end
        
     end
