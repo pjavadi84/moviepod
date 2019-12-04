@@ -1,9 +1,7 @@
 
 # Moviepod
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/moviepod`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+Welcome to Moviepod. This simple app shows the top 20 popular movies updated daily on themoviedb.org
 
 ## Installation
 

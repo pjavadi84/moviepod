@@ -36,7 +36,7 @@ class MoviePod::CLI
     user_input = nil 
     while user_input != "exit"
     sleep(1)
-      puts "\nEnter a number to see details about the movie OR 'list' to see the list again, or type 'exit' to exit the program:  "
+      puts "\nEnter a number from the list to see details about the movie OR 'list' to see the list again, or type 'exit' to exit the program:  "
       
       user_input = gets.strip.downcase
       
@@ -48,7 +48,7 @@ class MoviePod::CLI
       elsif user_input == "exit"
         goodbye
       else
-        puts "number is not within range in the list"
+        puts "invalid character or number entered. Please try again!"
       end
     end
   end
