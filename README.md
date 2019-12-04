@@ -1,7 +1,7 @@
 
 # Moviepod
 ![alt text](https://i.imgur.com/7OGKVPn.jpg "Logo Title Text 1")
-Welcome to Moviepod. This simple app shows the top 20 popular movies updated daily on themoviedb.org
+Welcome to Moviepod. This simple app shows the top 20 popular movies updated daily on [themoviedb.org](https://www.themoviedb.org/)
 
 ## Installation
 
