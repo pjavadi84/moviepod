@@ -1,6 +1,6 @@
 
 # Moviepod
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://i.imgur.com/7OGKVPn.jpg "Logo Title Text 1")
 Welcome to Moviepod. This simple app shows the top 20 popular movies updated daily on themoviedb.org
 
 ## Installation
