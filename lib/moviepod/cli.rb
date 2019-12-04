@@ -1,6 +1,7 @@
 class MoviePod::CLI
-  
-  def call 
+
+  def call
+    MoviePod::API.new.api_load
     greeting
     movie_list_menu
   end
