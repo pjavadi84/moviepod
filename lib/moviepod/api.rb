@@ -7,14 +7,14 @@ class MoviePod::API
   
           json_response = JSON.parse(popularity_url)
           json_response["results"].each do |movie_hash|
+            
             movie_ID = movie_hash["id"]
             title = movie_hash["title"]
             overview = movie_hash["overview"]
-            budget = movie_hash["budget"]
             popularity = movie_hash["popularity"]
             release_date = movie_hash["release_date"]
-            
-            MoviePod::Movie.new(movie_ID,title,overview,budget,popularity,release_date)
+           
+            MoviePod::Movie.new(movie_ID,title,overview,popularity,release_date)
           end
         
   end

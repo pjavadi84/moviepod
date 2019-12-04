@@ -18,23 +18,24 @@ class MoviePod::CLI
     puts "\nToday's Top popular Movies: "
     sleep(1.5)
     MoviePod::Movie.all.uniq.each.with_index(1) do |movie, index|
-      puts "#{index}. #{movie.title} - Rating: #{movie.popularity}"
+      puts "#{index}. #{movie.title}"
     end
   end
   
   
   def movie_detail_info(input)
     movie = MoviePod::Movie.all[input.to_i - 1]
-    puts "Movie-ID#: #{movie.id}"
+    puts "Movie#: #{movie.id}"
     puts "Title: #{movie.title}"
     puts "Overview: #{movie.overview}"
+    puts "Release Date: #{movie.release_date}"
   end
 
   
   def movie_list_menu
     user_input = nil 
     while user_input != "exit"
-    sleep(3)
+    sleep(1)
       puts "\nEnter a number to see details about the movie OR 'list' to see the list again, or type 'exit' to exit the program:  "
       
       user_input = gets.strip.downcase
