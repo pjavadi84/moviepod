@@ -14,7 +14,7 @@ git clone git@github.com:pjavadi84/moviepod.git
 Step 2:
 while on moviepod directory, type:
 ```
-bundle Install 
+bundle install 
 ```
 
 Step 3: 
@@ -23,23 +23,13 @@ run the file by typing:
 ruby bin/run
 ```
 
-<!--Add this line to your application's Gemfile:-->
-
-<!--```ruby-->
-<!--gem 'moviepod'-->
-<!--```-->
-
-<!--And then execute:-->
-
-<!--    $ bundle-->
-
-<!--Or install it yourself as:-->
-
-<!--    $ gem install moviepod-->
 
 ## Usage
 
-TODO: Write usage instructions here
+The user will be welcomed to the app and the app load the list of the movies listed by numbers. The user is given an option to either dig down to 
+see the details of a specific movie by typing the number associated with the movie, OR typing 'exit' to exit the app entirely. If the 
+user typed a string or a number that is not within the list's range, the user will be given an instruction to enter a number again or 
+exit the app. 
 
 ## Development
 
