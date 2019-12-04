@@ -5,19 +5,37 @@ Welcome to Moviepod. This simple app shows the top 20 popular movies updated dai
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'moviepod'
+Step 1: 
+clone the repo below
+```ruby--
+git clone git@github.com:pjavadi84/moviepod.git
 ```
 
-And then execute:
+Step 2:
+while on moviepod directory, type:
+```
+bundle Install 
+```
 
-    $ bundle
+Step 3: 
+run the file by typing: 
+```
+ruby bin/run
+```
 
-Or install it yourself as:
+<!--Add this line to your application's Gemfile:-->
 
-    $ gem install moviepod
+<!--```ruby-->
+<!--gem 'moviepod'-->
+<!--```-->
+
+<!--And then execute:-->
+
+<!--    $ bundle-->
+
+<!--Or install it yourself as:-->
+
+<!--    $ gem install moviepod-->
 
 ## Usage
 
