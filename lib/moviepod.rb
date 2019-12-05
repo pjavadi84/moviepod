@@ -1,6 +1,7 @@
 require "pry"
 require "json"
 require 'rest-client'
+require 'colorize'
 
 require_relative "moviepod/version"
 require_relative "moviepod/cli"
