@@ -31,7 +31,7 @@ class MoviePod::CLI
       
       user_input = gets.strip.downcase
       
-      if user_input.to_i > 0 && user_input.to_i < 21
+      if user_input.to_i > 0 && user_input.to_i < MoviePod::Movie.all.size
         sleep(2)
         movie_detail_info(user_input)
       elsif user_input == "list"
