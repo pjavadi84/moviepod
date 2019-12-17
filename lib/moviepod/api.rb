@@ -13,7 +13,7 @@ class MoviePod::API
             popularity = movie_hash["popularity"]
             release_date = movie_hash["release_date"]
            
-            MoviePod::Movie.new(movie_ID,title,overview,popularity,release_date)
+            MoviePod::Movie.new(title,overview,popularity,release_date)
           end
         
   end

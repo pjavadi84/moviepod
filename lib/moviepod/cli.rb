@@ -17,7 +17,7 @@ class MoviePod::CLI
   def trendy_movie_list
     puts "\nToday's Top popular Movies: ".colorize(:green)
     sleep(1.5)
-    MoviePod::Movie.all.uniq.each.with_index(1) do |movie, index|
+    MoviePod::Movie.all.each.with_index(1) do |movie, index|
       puts "#{index}. #{movie.title}".colorize(:blue)
     end
   end
