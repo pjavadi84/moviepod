@@ -1,12 +1,11 @@
 class MoviePod::Movie 
   
-  attr_accessor :id, :title, :overview, :popularity, :release_date
+  attr_accessor :title, :overview, :popularity, :release_date
  
   
   @@all = []
   
-  def initialize(id,title,overview,popularity,release_date)
-    @id = id
+  def initialize(title,overview,popularity,release_date)
     @title = title
     @overview = overview
     @budget = popularity

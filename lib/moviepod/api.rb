@@ -8,7 +8,6 @@ class MoviePod::API
           json_response = JSON.parse(popularity_url)
           json_response["results"].each do |movie_hash|
             
-            movie_ID = movie_hash["id"]
             title = movie_hash["title"]
             overview = movie_hash["overview"]
             popularity = movie_hash["popularity"]

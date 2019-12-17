@@ -46,7 +46,6 @@ class MoviePod::CLI
   
   def movie_detail_info(input)
     movie = MoviePod::Movie.all[input.to_i - 1]
-    puts "\nMovie#: #{movie.id}".colorize(:blue)
     puts "\nTitle: #{movie.title}".colorize(:blue)
     puts "\nOverview: #{movie.overview}".colorize(:blue)
     puts "\nRelease Date: #{movie.release_date}".colorize(:blue)
